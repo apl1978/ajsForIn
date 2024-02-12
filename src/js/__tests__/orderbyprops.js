@@ -1,6 +1,6 @@
 import orderByProps from '../orderbyprops';
 
-test ('check Bowerman is created', () => {
+test ('check Object sorted by properties', () => {
   const obj = { name: "мечник", health: 10, level: 2, attack: 80, defence: 40 };
   const res = orderByProps(obj, ["name", "level"]);
   expect(res).toEqual([
